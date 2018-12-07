@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+          <link rel="stylesheet" href="style_css/style_table.css">
+        <title>Tabele</title>
+    </head>
+    <body>
+      <table>
+
+       <!-- <tr></tr>  tr - table row (wiersz) -->
+
+        <tr>
+          <td>
+            <abbr title="Harold">
+            <img src="img/hidethepainharold.jpg" width="600" height="400" alt="Lol nope">
+            </abbr>
+          </td>
+          <td>
+            <abbr title="Asgardian Flag">
+            <img src="img/AsgardianFlag.jpg">
+            </abbr>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <abbr title="Asgardian Flag">
+            <img src="img/AsgardianFlag.jpg">
+            </abbr>
+          </td>
+          <td>
+            <abbr title="Harold">
+            <img src="img/hidethepainharold.jpg" width="600" height="400" alt="Lol nope">
+            </abbr>
+          </td>
+        </tr>
+
+      </table>
+        <hr>
+      <h3>Nagłówki</h3>
+
+      <table>
+        <tr>
+          <th> Imię </th>
+          <th> Nazwisko </th>
+          <th> Wiek </th>
+        </tr>
+        <tr>
+          <td> Agnieszka </td>
+          <td> Nowak </td>
+          <td> 24 </td>
+        </tr>
+      </table>
+
+      <!--Nagłówek kolumny i wiersza -->
+
+      <table>
+        <tr>
+          <th></th>
+          <th>Nagłówek pierwszej kolumny</th>
+          <th>Nagłówek drugiej kolumny</th>
+        </tr>
+        <tr>
+          <th scope="row">Nagłówek pierwszego wiersza</th>
+          <td>Dane 1</td>
+          <td>Dane 2</td>
+        </tr>
+        <tr>
+          <th scope="row">Nagłówek drugiego wiersza</th>
+          <td>Dane 3</td>
+          <td>Dane 4</td>
+        </tr>
+        <tr>
+          <th scope="row">Nagłówek trzeciego wiersza</th>
+          <td>Dane 5</td>
+          <td>Dane 6</td>
+        </tr>
+      </table>
+
+      <!-- ŁĄCZENIE KOLUMN -->
+      <hr>
+      <h3>Łączenie Kolumn</h3>
+      <table>
+        <tr>
+          <th></th>
+          <th>Poniedziałek</th>
+          <th>Wtorek</th>
+          <th>Środa</th>
+        </tr>
+        <tr>
+          <th scope="row">15:00</th>
+          <td>Judo</td>
+          <td>Kido</td>
+          <td>Balet</td>
+        </tr>
+        <tr>
+          <th scope="row">16:00</th>
+          <td>Boks</td>
+          <td>Piłka</td>
+          <td>Basen</td>
+        </tr>
+        <tr>
+          <th scope="row">17:00</th>
+          <td>KSW</td>
+          <td>Zapasy</td>
+          <td>Zapasy</td>
+          <!-- Można też <td colspan="2">zapasy</td> -->
+        </tr>
+      </table>
+      <br>
+      <hr>
+      <br>
+      <h3>Łączenie wierszy</h3>
+      <table>
+        <tr>
+          <th></th>
+          <th>Poniedziałek</th>
+          <th>Wtorek</th>
+          <th>Środa</th>
+        </tr>
+        <tr>
+          <th scope="row">17:00</th>
+          <td colspan="2">Zapasy</td>
+          <td rowspan="2"> Boks </td>
+        </tr>
+        <tr>
+          <th scope="row">18:00</th>
+          <td> Judo</td>
+          <td> Kolarstwo</td>
+        </tr>
+      </table>
+      <hr>
+      <hr>
+      <table>
+        <tr>
+          <th colspan="5"> Nagłówek Kolumny </th>
+        </tr>
+        <tr>
+          <th scope="row" rowspan="5"> Nagłówek Wierszy</th>
+
+          <td colspan="2"> Koń rafał</td>
+          <td> <img src="img/hidethepainharold.jpg" width="60" height="40" alt="Lol nope"></td>
+          <td> <img src="img/AsgardianFlag.jpg" width="60" height="40"></td>
+
+        </tr>
+        <tr>
+
+          <td><img src="img/polska-mini.jpg" width="60" height="40"> </td>
+          <td colspan="3">Problem solved ( ͡° ͜ʖ ͡°)</td>
+
+        </tr>
+        <tr>
+
+          <td colspan="4"> AWWW YEAH!</td>
+
+        </tr>
+      </table>
+
+        <hr>
+        <hr>
+      <h3> Długie tabele</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th> Zmienna A </th>
+            <th> Zmienna B </th>
+            <th> Suma </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td> 2</td>
+            <td> 3</td>
+            <td> 5</td>
+          </tr>
+          <tr>
+            <td> 20</td>
+            <td> 13</td>
+            <td> 33</td>
+          </tr>
+          <tr>
+            <td> 5</td>
+            <td> 42</td>
+            <td> 47</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td> 27 </td>
+            <td> 58 </td>
+            <td> 85 </td>
+          </tr>
+        </tfoot>
+      </table>
+    </body>
+</html>
